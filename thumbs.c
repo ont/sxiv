@@ -177,7 +177,7 @@ void tns_init(tns_t *tns, int cnt, win_t *win) {
 			free(cache_dir);
 		len = strlen(homedir) + 10;
 		cache_dir = (char*) s_malloc(len * sizeof(char));
-		snprintf(cache_dir, len, "%s/.sxiv", homedir);
+		snprintf(cache_dir, len, "%s/.cache/sxiv", homedir);
 	} else {
 		warn("could not locate thumbnail cache directory");
 	}
